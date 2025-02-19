@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "Barlow", serif;
+  --font-serif: "Fraunces", serif;
+  --color-white: hsl(0, 0%, 100%);
+  --color-foreground: hsl(212, 27%, 19%);
+  --color-muted-foreground: hsl(213, 9%, 39%);
+  --color-muted: hsl(232, 10%, 55%);
+  --color-grayish-blue: hsl(210, 4%, 67%);
+  --color-yellow: hsl(51, 100%, 49%);
+  --color-soft-red: hsl(7, 99%, 70%);
+  --color-graphic-text: hsl(167, 40%, 24%);
+  --color-photography-text: hsl(198, 62%, 26%);
+  --color-footer: hsl(168, 34%, 41%);
+}
+
+body {
+  @apply font-sans text-lg bg-white text-muted-foreground font-semibold;
+}
