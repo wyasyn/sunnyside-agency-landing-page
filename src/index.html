@@ -16,12 +16,48 @@
       rel="stylesheet"
     />
     <link href="./output.css" rel="stylesheet" />
+    <script src="main.js" defer></script>
   </head>
   <body>
     <header
-      class="bg-[url(/images/mobile/image-header.webp)] md:bg-[url(/images/desktop/image-header.webp)] bg-no-repeat bg-bottom bg-cover h-full min-h-screen md:min-h-[90vh]"
+      class="bg-[url(/images/mobile/image-header.webp)] md:bg-[url(/images/desktop/image-header.webp)] bg-no-repeat bg-bottom bg-cover h-full min-h-screen md:min-h-[90vh] text-white"
     >
-      <nav>nav</nav>
+      <nav
+        class="flex items-center justify-between gap-4 container py-5 mx-auto max-md:px-4"
+      >
+        <a href="/">
+          <img src="/images/logo.svg" alt="logo image" />
+        </a>
+        <ul
+          class="max-md:fixed max-md:top-[3.5rem] max-md:left-1/2 max-md:-translate-x-1/2 max-md:flex-col md:flex-row flex items-center gap-6 capitalize max-md:bg-white max-md:text-muted-foreground max-md:w-[95%] max-md:pt-24 max-md:pb-12 max-md:hidden"
+          id="nav-list"
+        >
+          <li
+            class="md:hidden absolute top-0 left-0 w-full h-12 bg-header path"
+          >
+            <span class="sr-only">blue design</span>
+          </li>
+          <li>
+            <a href="/">about</a>
+          </li>
+          <li>
+            <a href="/">services</a>
+          </li>
+          <li>
+            <a href="/">projects</a>
+          </li>
+          <li>
+            <a
+              class="uppercase text-foreground bg-white rounded-full px-5 py-2 max-md:bg-yellow font-bold font-serif"
+              href="/"
+              >contact</a
+            >
+          </li>
+        </ul>
+        <button class="cursor-pointer md:hidden" id="menu">
+          <img src="/images/icon-hamburger.svg" alt="menu icon" />
+        </button>
+      </nav>
     </header>
     <main>main</main>
     <footer class="bg-footer text-graphic-text">footer</footer>

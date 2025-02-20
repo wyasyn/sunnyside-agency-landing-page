@@ -13,8 +13,13 @@
   --color-graphic-text: hsl(167, 40%, 24%);
   --color-photography-text: hsl(198, 62%, 26%);
   --color-footer: hsl(168, 34%, 41%);
+  --color-header: hsl(200.41, 100%, 61.96%);
 }
 
 body {
   @apply font-sans text-lg bg-white text-muted-foreground font-semibold;
+}
+
+.path {
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
 }
